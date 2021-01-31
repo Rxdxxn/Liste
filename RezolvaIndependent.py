@@ -1,0 +1,23 @@
+with open('exemplu.txt' , 'r') as f:
+    x = f.readline()
+    y = f.readline()
+prenume = x.split()
+varsta = y.split()
+for i in range(0,len(prenume)):
+    print(f'{prenume[i]} are virsta de {varsta[i]} ani')
+prenume.append('Andreea')
+varsta.append('34')
+prenume.append('Ioan')
+varsta.append('23')
+print(prenume)
+print(varsta)
+prenume.pop(2)
+varsta.pop(2)
+print('primele trei elemente din lista prenume:',f'{prenume[:3]}')
+list1=(f'{prenume[::-1]}')
+print(list1)
+print('elementele cu indicii 2 și 4:',f'{prenume[2]},{prenume[4]}')
+print('elementele cu indicii 2 și 4:',f'{varsta[2]},{varsta[4]}')
+print('elementele cu indicii de la 0 la 5:'f'{prenume[:6]}')
+print('elementele cu indicii de la 0 la 5:'f'{varsta[:6]}')
+
